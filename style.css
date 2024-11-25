@@ -46,6 +46,13 @@ h1 {
     font-size: 1.1rem;
 }
 
+.name {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    margin: 0.5rem 0;
+    font-weight: 500;
+}
+
 section {
     margin-bottom: 1rem;
     padding: 1.5rem;
