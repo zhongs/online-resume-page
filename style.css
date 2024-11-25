@@ -4,6 +4,7 @@
     --text-color: #333;
     --background-color: #f5f6fa;
     --section-background: #ffffff;
+    --date-color: #666;
 }
 
 * {
@@ -106,27 +107,64 @@ ul {
     left: 0;
 }
 
-.job, .project {
+.edu-item {
     margin-bottom: 1rem;
 }
 
 .date {
-    color: var(--secondary-color);
+    color: var(--date-color);
     font-style: italic;
-    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
+    margin: 0.2rem 0;
+}
+
+.position, .role {
+    color: var(--secondary-color);
+    font-weight: 500;
+    margin: 0.2rem 0;
+}
+
+.job, .project {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.job:last-child, .project:last-child {
+    border-bottom: none;
 }
 
 .experience ul li, .projects ul li {
     margin: 0.3rem 0;
-    padding-left: 1.5rem;
+    padding-left: 1.2rem;
     position: relative;
 }
 
 .experience ul li::before, .projects ul li::before {
-    content: "→";
+    content: "•";
     color: var(--secondary-color);
     position: absolute;
     left: 0;
+    font-weight: bold;
+}
+
+.advantages {
+    list-style: none;
+    padding-left: 1.2rem;
+}
+
+.advantages li {
+    margin: 0.4rem 0;
+    position: relative;
+    padding-left: 1.2rem;
+}
+
+.advantages li::before {
+    content: "•";
+    color: var(--secondary-color);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
 }
 
 @media (max-width: 768px) {
